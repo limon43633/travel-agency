@@ -1,10 +1,13 @@
 import logo from './logo.svg'
+import topBannerBg from './top_banner_bg.jpg'
 
 
 
 
 export const assets = {
   logo,
+  topBannerBg
+
 }
 
 
