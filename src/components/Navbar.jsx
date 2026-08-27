@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate, useLocation } from 'react-router-dom' // useLocation ইমপোর্ট করা হয়েছে
 import { Menu, X } from 'lucide-react'
 import { assets, menuLinks } from '../assets/assets'
 
 const Navbar = () => {
   const navigate = useNavigate()
+  const location = useLocation() // বর্তমান রাউট চেক করার জন্য
   const [menuOpen, setMenuOpen] = useState(false)
+
+  // এটি চেক করবে আমরা হোম পেজে আছি কিনা
+  const isHome = location.pathname === '/'
 
   const closeMenu = () => {
     setMenuOpen(false)
@@ -29,25 +33,43 @@ const Navbar = () => {
             className="h-11 w-11 md:h-12 md:w-12"
           />
 
-          <span className="Mon-font text-xl font-semibold text-[#15170F] tracking-tight">
+          {/* লোগো টেক্সট ডাইনামিক করা হয়েছে */}
+          <span className={`Mon-font text-xl font-semibold tracking-tight ${isHome ? 'text-white' : 'text-[#15170F]'}`}>
             TripNest
           </span>
         </div>
 
-        {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-0.5 bg-white rounded-full p-2 shadow-[0_8px_24px_rgba(20,25,15,0.14)]">
+        {/* Desktop Links - Dynamic Styling Based on Route */}
+        <div className={`hidden md:flex items-center gap-1 rounded-full p-2 transition-all duration-300 ${
+          isHome
+            ? 'bg-white/10 backdrop-blur-md border border-white/20 shadow-lg' // Home Page Style
+            : 'bg-white shadow-[0_8px_24px_rgba(20,25,15,0.14)]'             // Other Pages Style
+        }`}>
           {menuLinks.map((link, i) => (
             <NavLink
               key={i}
               to={link.path}
               end={link.path === '/'}
-              className={({ isActive }) =>
-                `whitespace-nowrap rounded-full px-4.5 py-2.5 text-sm tracking-wide transition-colors duration-200 ${
+              className={({ isActive }) => {
+                // Base classes for all links
+                const baseClasses = "whitespace-nowrap rounded-full px-4.5 py-2.5 text-sm tracking-wide transition-colors duration-200";
+
+                // Styles for Home Page
+                if (isHome) {
+                  return `${baseClasses} ${
+                    isActive
+                      ? 'bg-white/20 text-white font-medium'
+                      : 'text-white/70 font-normal hover:text-white hover:bg-white/10'
+                  }`
+                }
+
+                // Styles for Other Pages
+                return `${baseClasses} ${
                   isActive
                     ? 'bg-[#F1F2EC] text-[#15170F] font-medium'
                     : 'text-[#9A9C90] font-normal hover:text-[#15170F]'
                 }`
-              }
+              }}
             >
               {link.name}
             </NavLink>

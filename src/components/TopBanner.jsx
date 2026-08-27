@@ -8,10 +8,9 @@ const TopBanner = () => {
     <section className="relative">
       {/* Background image + navbar wrapper */}
       <div
-        className="relative overflow-hidden rounded-[32px] mx-4 md:mx-8 mt-4 bg-cover bg-center"
+        className="relative overflow-hidden bg-cover bg-center min-h-screen flex flex-col justify-between"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=85')",
+          backgroundImage: `url(${assets.topBannerBg})`
         }}
       >
         {/* Gradient overlay for readability */}
