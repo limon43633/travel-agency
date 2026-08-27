@@ -4,15 +4,19 @@ import bandarban from './bandarban.jpg'
 import coxs from './coxs.jpg'
 import sajek from './sajek.jpg'
 import sundarban from './sundarban.jpg'
+import travelersExploring from './travelers_exploring.jpg'
+import tourGuide from './tour_guide.jpg'
 
 
 
 
 export const assets = {
   logo,
-  topBannerBg
-
+  topBannerBg,
+  travelersExploring,
+  tourGuide
 }
+
 
 
 export const menuLinks = [
