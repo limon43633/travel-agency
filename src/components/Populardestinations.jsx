@@ -57,7 +57,7 @@ const PopularDestinations = () => {
               </p>
 
               <div className="flex items-baseline justify-between mt-4 pt-4 border-t border-[#EDEEE6]">
-                <p className="text-[13px] text-[#15170F]">
+                <p className="text-[18px] text-[#15170F]">
                   <span className="text-[#9A9C90]">From </span>
                   <span className="font-medium">{place.price}</span>
                   <span className="text-[#9A9C90]"> / person</span>

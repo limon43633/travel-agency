@@ -1,5 +1,9 @@
 import logo from './logo.svg'
 import topBannerBg from './top_banner_bg.jpg'
+import bandarban from './bandarban.jpg'
+import coxs from './coxs.jpg'
+import sajek from './sajek.jpg'
+import sundarban from './sundarban.jpg'
 
 
 
@@ -29,19 +33,17 @@ export const destinations = [
     price: "Tk 8,500",
     rating: 4.8,
     reviews: "2.1k",
-    image:
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80",
+    image: coxs
   },
   {
     id: 2,
     name: "Sajek Valley",
-    location: "Rangamati, Chattogram Hill Tracts",
+    location: "Rangamati",
     duration: "2 Days, 1 Night",
     price: "Tk 6,000",
     rating: 4.9,
     reviews: "1.4k",
-    image:
-      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80",
+    image: sajek
   },
   {
     id: 3,
@@ -51,8 +53,7 @@ export const destinations = [
     price: "Tk 12,000",
     rating: 4.7,
     reviews: "980",
-    image:
-      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=900&q=80",
+    image: sundarban
   },
   {
     id: 4,
@@ -62,7 +63,6 @@ export const destinations = [
     price: "Tk 7,500",
     rating: 4.8,
     reviews: "1.6k",
-    image:
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80",
+    image: bandarban
   },
 ]
