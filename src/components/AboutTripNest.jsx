@@ -10,7 +10,7 @@ const stats = [
 
 const AboutTripNest = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 md:px-10 py-24 md:py-32">
+    <section className="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-25">
       {/* Section heading */}
       <div className="mb-16 pb-8 border-b border-[#E3E4DA]">
         <span className="text-xs font-medium tracking-[0.2em] uppercase text-[#9A9C90]">

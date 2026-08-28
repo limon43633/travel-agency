@@ -4,7 +4,7 @@ import { destinations } from '../assets/assets'
 
 const PopularDestinations = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 md:px-10 py-24 md:py-32">
+    <section className="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-28">
       {/* Section heading */}
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 pb-8 border-b border-[#E3E4DA]">
         <div>

@@ -6,6 +6,8 @@ import sajek from './sajek.jpg'
 import sundarban from './sundarban.jpg'
 import travelersExploring from './travelers_exploring.jpg'
 import tourGuide from './tour_guide.jpg'
+import kaptai from './kaptai_lake.jpg'
+import travelPlan from './travel_plan.jpg'
 
 
 
@@ -14,7 +16,9 @@ export const assets = {
   logo,
   topBannerBg,
   travelersExploring,
-  tourGuide
+  tourGuide,
+  kaptai,
+  travelPlan
 }
 
 

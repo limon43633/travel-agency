@@ -66,11 +66,11 @@ const VerifiedBadge = () => (
 
 const WhyChooseUs = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 md:px-10 py-14 md:py-18">
+    <section className="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-25">
       {/* Section heading */}
       <div className="mb-8 pb-4 border-b border-[#E3E4DA]">
         <h2 className="text-[#15170F] font-serif text-4xl md:text-5xl tracking-tight italic">
-          Why choose us
+          Why travel with us
         </h2>
         <p className="text-[#9A9C90] text-sm md:text-[15px] font-light mt-3">
           Travel with total peace of mind
