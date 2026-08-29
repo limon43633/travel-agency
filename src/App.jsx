@@ -6,6 +6,7 @@ import Services from './pages/Services'
 import Packages from './pages/Packages'
 import ContactUs from './pages/ContactUs'
 import Layout from './layouts/Layout'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -22,6 +23,10 @@ const App = () => {
           <Route path='/contact-us' element={<ContactUs />} />
         </Route>
       </Routes>
+
+
+    <Footer />
+
     </div>
   )
 }

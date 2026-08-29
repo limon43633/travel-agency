@@ -10,12 +10,9 @@ const stats = [
 
 const AboutTripNest = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-25">
+    <section className="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-20">
       {/* Section heading */}
       <div className="mb-16 pb-8 border-b border-[#E3E4DA]">
-        <span className="text-xs font-medium tracking-[0.2em] uppercase text-[#9A9C90]">
-          03 — Why travel with us
-        </span>
         <h2 className="text-[#15170F] font-serif text-4xl md:text-5xl mt-4 tracking-tight italic max-w-2xl">
           Get to know TripNest
         </h2>

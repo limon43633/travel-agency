@@ -8,9 +8,6 @@ const PopularDestinations = () => {
       {/* Section heading */}
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 pb-8 border-b border-[#E3E4DA]">
         <div>
-          <span className="text-xs font-medium tracking-[0.2em] uppercase text-[#9A9C90]">
-            02 — Handpicked for you
-          </span>
           <h2 className="text-[#15170F] font-serif text-4xl md:text-5xl mt-4 tracking-tight italic">
             Popular destinations
           </h2>
