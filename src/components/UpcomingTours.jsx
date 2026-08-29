@@ -70,9 +70,7 @@ const UpcomingTours = () => {
                   </Link>
                 </div>
 
-                <p className="text-[#9A9C90] text-xs tracking-wide uppercase mt-1.5">
-                  {tour.location}
-                </p>
+               
 
                 <div className="flex items-center gap-1.5 text-[#5D5F56] text-xs mt-2.5">
                   <Calendar size={12} strokeWidth={1.75} />

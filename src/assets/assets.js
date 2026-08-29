@@ -16,6 +16,8 @@ import sundarbanMemories from './sundarban_memories.jpg'
 import sreemangalMemo from './sreemangal_memo.jpg'
 import sitakundaWaterfallMemo from './sitakunda_waterfall_memo.jpg'
 import tanguarMemo from './tanguar_memo.jpg'
+import sundarbanmemo_2 from './sundarban_memo_2.jpg'
+import sajekExplore from './sajek_explore.jpg'
 
 
 
@@ -34,7 +36,13 @@ export const assets = {
   sundarbanMemories,
   sreemangalMemo,
   sitakundaWaterfallMemo,
-  tanguarMemo
+  tanguarMemo,
+  sundarbanmemo_2,
+  sajekExplore,
+  sajek,
+  coxs,
+  bandarban,
+  sundarban
 }
 
 
@@ -195,7 +203,7 @@ export const upcomingTours = [
     id: 1,
     destination: "Sajek Valley",
     location: "Rangamati",
-    image: assets.memorySajek, // reuse existing image or add a new one
+    image: assets.sajek,
     dateRange: "Sep 12 - Sep 14",
     duration: "3 Days, 2 Nights",
     totalSeats: 20,
@@ -206,7 +214,7 @@ export const upcomingTours = [
     id: 2,
     destination: "Cox's Bazar",
     location: "Chattogram Division",
-    image: assets.memoryCoxsbazar,
+    image: assets.coxs,
     dateRange: "Sep 19 - Sep 21",
     duration: "3 Days, 2 Nights",
     totalSeats: 25,
@@ -217,7 +225,7 @@ export const upcomingTours = [
     id: 3,
     destination: "Bandarban Hill Trek",
     location: "Chattogram Hill Tracts",
-    image: assets.memoryBandarban,
+    image: assets.bandarban,
     dateRange: "Sep 26 - Sep 28",
     duration: "3 Days, 2 Nights",
     totalSeats: 15,
@@ -228,7 +236,7 @@ export const upcomingTours = [
     id: 4,
     destination: "Sundarbans Boat Trail",
     location: "Khulna Division",
-    image: assets.memorySundarbans,
+    image: assets.sundarbanmemo_2,
     dateRange: "Oct 3 - Oct 5",
     duration: "3 Days, 2 Nights",
     totalSeats: 18,
